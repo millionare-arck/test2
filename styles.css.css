@@ -1,0 +1,128 @@
+/* Global Styles */
+:root {
+  --primary-color: #35424a;
+  --secondary-color: #e8491d;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header & Navigation */
+header {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 20px 0;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+header a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  padding: 5px 10px;
+}
+
+nav ul li a.current, 
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* Showcase */
+.showcase {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Main Content */
+.main-content {
+  padding: 40px 0;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: 40px 0;
+  background: var(--light-color);
+}
+
+.review-card {
+  background: var(--white);
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 20px;
+  background: var(--light-color);
+  border-radius: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
